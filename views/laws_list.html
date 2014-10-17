@@ -1,0 +1,38 @@
+<section class="lawpage">
+    <div class="search">
+        <h1>Listagem de leis</h1>
+        <label>search: </label>
+        <input ng-model="query" placeholder="Procure por leis" autofocus>
+
+
+<!--
+        <label class="formgroup">by:
+            <select ng-model="lawOrder">
+                <option value="name">Name</option>
+                <option value="reknown">Partido</option>
+            </select>
+        </label>
+
+        <label class="formgroup">
+            <input type="radio" ng-model="direction" name="direction" checked>
+            ascending
+        </label>
+        <label class="formgroup">
+            <input type="radio" ng-model="direction" name="direction" value="reverse">
+            descending
+        </label>
+-->
+
+    </div>
+    <ul class="politicianlist">
+        <li class="politician cf" ng-repeat="item in laws | filter: query | orderBy: lawOrder:direction">
+            <a href="#/leis/{{laws.indexOf(item)}}">
+                <div class="info">
+                    <h2 style="text-transform:capitalize;">{{ item.name }}</h2>
+                    <h3>{{ item.description }}</h3>
+                    <h3>{{ item.date.plain }}</h3>
+                </div>
+            </a>
+        </li>
+    </ul>
+</section>
