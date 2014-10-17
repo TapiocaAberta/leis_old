@@ -1,5 +1,8 @@
 myApp.config(['$routeProvider', function ($routeProvider) {
       $routeProvider.
+          when('/index', {
+                templateUrl: 'views/index.html'
+          }).
           when('/politicos', {
                 templateUrl: 'views/politician_list.html',
                 controller : 'PoliticianListController'
@@ -17,6 +20,6 @@ myApp.config(['$routeProvider', function ($routeProvider) {
                 controller : 'LawDetailsController'
           }).
           otherwise({
-                redirectTo: '/leis'
+                redirectTo: '/index'
           });
 }]);
