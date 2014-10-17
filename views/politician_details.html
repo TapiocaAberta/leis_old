@@ -1,0 +1,16 @@
+<section class="politicianinfo">
+    <div class="politician cf" ng-model="politicians">
+        <a href="#/details/{{prevItem}}" class="btn btn-left">&lt;</a>
+        <a href="#/details/{{nextItem}}" class="btn btn-right">&gt;</a>
+
+        <h1>{{politicians[whichItem].NOME_URNA_CANDIDATO}}</h1>
+
+        <div class="info">
+            <h3>{{politicians[whichItem].NOME_PARTIDO}}</h3>
+            <img ng-src="{{politicians[whichItem].FOTO}}" alt="Photo of {{politicians[whichItem].name}}">
+
+            <div class="bio">{{politicians[whichItem].DESCRICAO_GRAU_INSTRUCAO}}</div>
+        </div>
+    </div>
+    <a href="index.html">&laquo; Back to search</a>
+</section>

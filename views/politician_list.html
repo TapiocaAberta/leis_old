@@ -1,0 +1,40 @@
+<section class="politicianpage">
+    <div class="search">
+        <h1>politician Directory</h1>
+        <label>search: </label>
+        <input ng-model="query" placeholder="Search for politicians" autofocus>
+
+
+<!--
+        <label class="formgroup">by:
+            <select ng-model="politicianOrder">
+                <option value="name">Name</option>
+                <option value="reknown">Partido</option>
+            </select>
+        </label>
+
+        <label class="formgroup">
+            <input type="radio" ng-model="direction" name="direction" checked>
+            ascending
+        </label>
+        <label class="formgroup">
+            <input type="radio" ng-model="direction" name="direction" value="reverse">
+            descending
+        </label>
+-->
+
+    </div>
+    <ul class="politicianlist">
+        <li class="politician cf" ng-repeat="item in politicians | filter: query | orderBy: politicianOrder:direction">
+            <a href="#/politicos    /{{politicians.indexOf(item)}}">
+                <img ng-src="{{ item.FOTO }}" alt="Photo of {{item.name}}">
+
+                <div class="info">
+                    <h2 style="text-transform:capitalize;">{{ item.NOME_URNA_CANDIDATO.toLowerCase() }}</h2>
+
+                    <h3>{{ item.NOME_PARTIDO }}</h3>
+                </div>
+            </a>
+        </li>
+    </ul>
+</section>
