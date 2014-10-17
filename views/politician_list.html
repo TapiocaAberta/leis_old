@@ -1,5 +1,5 @@
-<section class="politicianpage">
-    <div class="search">
+<section>
+    <div>
         <h1>politician Directory</h1>
         <label>search: </label>
         <input ng-model="query" placeholder="Search for politicians" autofocus>
@@ -24,12 +24,12 @@
 -->
 
     </div>
-    <ul class="politicianlist">
-        <li class="politician cf" ng-repeat="item in politicians | filter: query | orderBy: politicianOrder:direction">
+    <ul>
+        <li ng-repeat="item in politicians | filter: query | orderBy: politicianOrder:direction">
             <a href="#/politicos/{{politicians.indexOf(item)}}">
                 <img ng-src="{{ item.FOTO }}" alt="Photo of {{item.name}}">
 
-                <div class="info">
+                <div>
                     <h2 style="text-transform:capitalize;">{{ item.NOME_URNA_CANDIDATO.toLowerCase() }}</h2>
 
                     <h3>{{ item.NOME_PARTIDO }}</h3>

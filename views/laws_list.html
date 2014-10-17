@@ -1,5 +1,5 @@
-<section class="lawpage">
-    <div class="search">
+<section >
+    <div >
         <h1>Listagem de leis</h1>
         <label>search: </label>
         <input ng-model="query" placeholder="Procure por leis" autofocus>
@@ -24,8 +24,8 @@
 -->
 
     </div>
-    <ul class="politicianlist">
-        <li class="politician cf" ng-repeat="item in laws | filter: query | orderBy: lawOrder:direction">
+    <ul>
+        <li ng-repeat="item in laws | filter: query | orderBy: lawOrder:direction">
             <a href="#/leis/{{laws.indexOf(item)}}">
                 <div class="info">
                     <h2 style="text-transform:capitalize;">{{ item.name }}</h2>

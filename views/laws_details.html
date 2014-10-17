@@ -1,16 +1,16 @@
-<section class="lawinfo">
-    <div class="law cf" ng-model="laws">
-        <a href="#/details/{{prevItem}}" class="btn btn-left">&lt;</a>
-        <a href="#/details/{{nextItem}}" class="btn btn-right">&gt;</a>
+<section>
+    <div ng-model="laws">
+        <a href="#/details/{{prevItem}}" >&lt;</a>
+        <a href="#/details/{{nextItem}}" >&gt;</a>
 
         <h1>{{ laws[whichItem].author }}</h1>
 
-        <div class="info">
+        <div>
             <h3>{{ laws[whichItem].name }}</h3>
             <h3>{{ laws[whichItem].date.plain }}</h3>
 
-            <div class="bio">{{ laws[whichItem].description }}</div>
-            <div class="bio">{{ laws[whichItem].completeBody }}</div>
+            <div>{{ laws[whichItem].description }}</div>
+            <div>{{ laws[whichItem].completeBody }}</div>
         </div>
     </div>
     <a href="index.html">&laquo; Voltar para leis</a>
