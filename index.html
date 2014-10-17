@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Projetos de Lei SJC</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
+
+    <!-- Don't change the order of imports, Angular must be loaded before all the others scripts. -->
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular/angular-route.min.js"></script>
+
+    <!-- Angular App -->
+    <script src="js/app.js"></script>
+    <script src="js/route.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/PoliticianControllers.js"></script>
+    <script src="js/LawControllers.js"></script>
+
+
+    <!-- Other JS libraries -->
+    <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+
+</head>
+<body>
+    <div class="main" ng-view></div>
+</body>
+</html>
