@@ -3,14 +3,15 @@
         <a href="#/details/{{prevItem}}" >&lt;</a>
         <a href="#/details/{{nextItem}}" >&gt;</a>
 
-        <h1>{{ laws[whichItem].author }}</h1>
+        <h1>{{ law.author }}</h1>
 
         <div>
-            <h3>{{ laws[whichItem].name }}</h3>
-            <h3>{{ laws[whichItem].date.plain }}</h3>
+            <h3>{{ law.name }}</h3>
+            <h3>{{ law.date.plain }}</h3>
 
-            <div>{{ laws[whichItem].description }}</div>
-            <div>{{ laws[whichItem].completeBody }}</div>
+            <div>{{ law.description }}</div>
+ 
+            <div id="lawCompleteBody" ng-bind-html="law.completeBody | markdown"></div>
         </div>
     </div>
     <a href="index.html">&laquo; Voltar para leis</a>
