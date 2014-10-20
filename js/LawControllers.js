@@ -10,7 +10,7 @@ lawControllers.controller('LawListController', ['$scope', '$http', function ($sc
 lawControllers.controller('LawDetailsController', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
       $http.get('data/laws.json').success(function (data) {
             $scope.laws = data;
-            $scope.whichItem = $routeParams.itemId;
+            $scope.law = data[$routeParams.itemId];          
 
             if ($routeParams.itemId > 0) {
                   $scope.prevItem = Number($routeParams.itemId) - 1;
