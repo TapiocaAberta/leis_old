@@ -1,4 +1,4 @@
-myApp.config(['$routeProvider', function ($routeProvider) {
+politiciansApp.config(['$routeProvider', function ($routeProvider) {
       $routeProvider.
           when('/index', {
                 templateUrl: 'views/index.html'
