@@ -24,15 +24,16 @@
 -->
 
     </div>
-    <ul>
-        <li ng-repeat="item in laws | filter: query | orderBy: lawOrder:direction">
-            <a href="#/leis/{{laws.indexOf(item)}}">
-                <div class="info">
-                    <h2 style="text-transform:capitalize;">{{ item.name }}</h2>
-                    <h3>{{ item.description }}</h3>
-                    <h3>{{ item.date.plain }}</h3>
+    <div class="row">
+        <div class="col-6 col-sm-6 col-lg-4" ng-repeat="item in laws | filter: query | orderBy: lawOrder:direction" style="height: 300px;">
+            <a class="thumbnail" href="#/leis/{{laws.indexOf(item)}}">
+                <div class="caption">
+                    <h3 style="text-transform:capitalize;">{{ item.lawId }}</h3>
+                    <p>{{ item.description }}</p>
+                    <p><strong>{{ item.author }}</strong></p> 
+                    <p><strong>{{ item.date.plain }}</strong></p>  
                 </div>
             </a>
-        </li>
-    </ul>
+        </div>
+    </div>
 </section>
