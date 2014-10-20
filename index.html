@@ -6,6 +6,7 @@
 
     <!-- Style -->
     <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="css/carousel.css"> 
     <link rel="stylesheet" href="css/style.css"> 
     
     <!-- Don't change the order of imports, Angular must be loaded before all the others scripts. -->
@@ -29,6 +30,15 @@
 
 </head>
 <body>
-    <div class="main container-fluid" ng-view></div>
+    <div class="container">  
+        <div ng-view></div>
+
+        <!-- FOOTER -->
+        <footer>
+            <p class="pull-right"><a href="#">Voltar ao topo</a></p>
+            <p><a href="http://pt.wikipedia.org/wiki/Copyleft">&copy; Copyleft</a> &middot;  2014 <a href="http://transparenciasjc.github.io/">Transparência SJC</a>.</p>
+        </footer>
+    </div>
+
 </body>
 </html>
