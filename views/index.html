@@ -1,21 +1,14 @@
 <section>
 
     <h1>Bem vindo!</h1>
+ 
+    <div class="slide-animate" ng-include src="'views/facebook.html'"></div>
 
-    <div align="center">
-        <div id="social-buttons">
-        	<div id="fb-root"></div>
-			<script>(function(d, s, id) {
-				var js, fjs = d.getElementsByTagName(s)[0];
-				if (d.getElementById(id)) return;
-				js = d.createElement(s); js.id = id;
-				js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=395736887160072&version=v2.0";
-				fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));</script>
-        </div>
-
-        <div class="fb-like-box" data-href="https://www.facebook.com/pages/Transpar%C3%AAncia-SJC/436813019726917?ref=br_tf" data-width="450" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
-    </div>
+<!--    
+	<div class="col-sm-3">
+		<div class="fb-like" onrender="widget.rendered = true" data-href="https://www.facebook.com/pages/Transpar%C3%AAncia-SJC/436813019726917?ref=br_tf" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+	</div>
+-->
 
     <h1>
         <a href="#/leis">Projetos de lei</a>

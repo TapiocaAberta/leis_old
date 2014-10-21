@@ -1,5 +1,6 @@
 var politiciansApp = angular.module('myApp', [
       'ngRoute',
+      'ezfb',
       'politicianControllers',
       'lawControllers'
 ]);
@@ -10,4 +11,10 @@ politiciansApp.filter('markdown', function ($sce) {
 		var html = converter.makeHtml(value || '');
         return $sce.trustAsHtml(html);
     };
+});
+
+politiciansApp.config(function (ezfbProvider) {
+  ezfbProvider.setInitParams({
+    appId: '395736887160072'
+  });
 });
