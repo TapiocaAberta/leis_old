@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Projetos de Lei SJC</title>
 
+    <!-- AngularJS doesn't support load script inside ng-include. So, Including jQuery before including Angular, made it work. (http://stackoverflow.com/questions/12197880/angularjs-how-to-make-angular-load-script-inside-ng-include) --> 
+    <script src="lib/bootstrap/jquery-2.1.1.min.js"></script>
+
     <!-- Style -->
     <link rel="stylesheet" href="css/bootstrap.min.css"> 
     <link rel="stylesheet" href="css/carousel.css"> 
@@ -27,7 +30,6 @@
 
 
     <!-- Other JS libraries -->
-    <script src="lib/bootstrap/jquery-2.1.1.min.js"></script>
     <script src="lib/bootstrap/bootstrap.min.js"></script> 
 
 </head>
