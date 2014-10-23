@@ -1,7 +1,8 @@
 <section>
     <div ng-model="politicians">
-        <a href="#/details/{{prevItem}}">&lt;</a>
-        <a href="#/details/{{nextItem}}">&gt;</a>
+    
+        <a href="#/details/{{prevItem}}"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a href="#/details/{{nextItem}}"><span class="glyphicon glyphicon-chevron-right"></span></a>
 
         <h1>{{politicians[whichItem].NOME_URNA_CANDIDATO}}</h1>
 
