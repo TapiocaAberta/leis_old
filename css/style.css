@@ -6,3 +6,9 @@ p {
 #social-buttons {
     padding-bottom: 50px;
 }
+
+.glyphicon-big {
+	font-size: 8.2em;
+	width: 140px; 
+	height: 140px;
+}
