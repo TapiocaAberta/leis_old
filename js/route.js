@@ -1,22 +1,22 @@
 politiciansApp.config(['$routeProvider', function ($routeProvider) {
       $routeProvider.
           when('/index', {
-                templateUrl: 'views/index.html'
+                templateUrl: 'views/base/index.html'
           }).
           when('/politicos', {
-                templateUrl: 'views/politician_list.html',
+                templateUrl: 'views/politican/politician_list.html',
                 controller : 'PoliticianListController'
           }).
           when('/politicos/:itemId', {
-                templateUrl: 'views/politician_details.html',
+                templateUrl: 'views/politican/politician_details.html',
                 controller : 'PoliticianDetailsController'
           }).
           when('/leis', {
-                templateUrl: 'views/laws_list.html',
+                templateUrl: 'views/laws/laws_list.html',
                 controller : 'LawListController'
           }).
           when('/leis/:itemId', {
-                templateUrl: 'views/laws_details.html',
+                templateUrl: 'views/laws/laws_details.html',
                 controller : 'LawDetailsController'
           }).
           otherwise({
