@@ -1,16 +1,18 @@
 var politiciansApp = angular.module('myApp', [
       'ngRoute',
+      'ui.bootstrap',
       'ezfb',
       'politicianControllers',
-      'lawControllers'
+      'lawControllers',
+      'carouselController'
 ]);
 
 politiciansApp.filter('markdown', function ($sce) {
-    var converter = new Showdown.converter();
-    return function (value) {
-		var html = converter.makeHtml(value || '');
-        return $sce.trustAsHtml(html);
-    };
+  var converter = new Showdown.converter();
+  return function (value) {
+    var html = converter.makeHtml(value || '');
+    return $sce.trustAsHtml(html);
+  };
 });
 
 politiciansApp.config(function (ezfbProvider) {
