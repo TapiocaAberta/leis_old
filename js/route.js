@@ -4,11 +4,11 @@ politiciansApp.config(['$routeProvider', function ($routeProvider) {
                 templateUrl: 'views/base/index.html'
           }).
           when('/politicos', {
-                templateUrl: 'views/politican/politician_list.html',
+                templateUrl: 'views/politician/politician_list.html',
                 controller : 'PoliticianListController'
           }).
           when('/politicos/:itemId', {
-                templateUrl: 'views/politican/politician_details.html',
+                templateUrl: 'views/politician/politician_details.html',
                 controller : 'PoliticianDetailsController'
           }).
           when('/leis', {
