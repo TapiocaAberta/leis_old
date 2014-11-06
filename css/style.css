@@ -3,6 +3,10 @@ p {
 	text-justify: inter-word;
 }
 
+.padding-from-top {
+  padding-top: 70px;
+}
+
 #social-buttons {
     padding-bottom: 50px;
 }

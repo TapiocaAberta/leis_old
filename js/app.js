@@ -20,3 +20,11 @@ politiciansApp.config(function (ezfbProvider) {
     appId: '395736887160072'
   });
 });
+
+function HeaderController($scope, $location) 
+{ 
+    $scope.isActive = function (viewLocation) { 
+        var path = $location.path();
+        return viewLocation == path;
+    };
+}
