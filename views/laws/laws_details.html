@@ -1,4 +1,6 @@
-<section>
+<div ng-include src="'views/base/navbar-fixed.html'"></div>
+
+<section class="padding-from-top">
     <div ng-model="laws">
         <a href="#/details/{{prevItem}}" >&lt;</a>
         <a href="#/details/{{nextItem}}" >&gt;</a>
@@ -14,5 +16,5 @@
             <div id="lawCompleteBody" ng-bind-html="law.completeBody | markdown"></div>
         </div>
     </div>
-    <a href="index.html">&laquo; Voltar para leis</a>
+    <a href="#/leis">&laquo; Voltar para leis</a>
 </section>

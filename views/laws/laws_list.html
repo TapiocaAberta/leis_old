@@ -1,14 +1,15 @@
-<section >
-    <div >
+<div ng-include src="'views/base/navbar-fixed.html'"></div>
+
+<section class="padding-from-top">
+    <div>
         <h1>Listagem de leis</h1>
     </div>
 
-    <div class="slide-animate" ng-include src="'views/facebook.html'"></div>
+    <div class="slide-animate" ng-include src="'views/base/facebook.html'"></div>
 
     <div>
         <label>Pesquisa: </label>
         <input ng-model="query" placeholder="Procure por leis" autofocus>
-
 
 <!--
         <label class="formgroup">by:

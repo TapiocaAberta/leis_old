@@ -1,4 +1,6 @@
-<section>
+<div ng-include src="'views/base/navbar-fixed.html'"></div>
+
+<section class="padding-from-top">
     <div ng-model="politicians">
     
         <a href="#/details/{{prevItem}}"><span class="glyphicon glyphicon-chevron-left"></span></a>
@@ -13,8 +15,8 @@
             <div>{{politicians[whichItem].DESCRICAO_GRAU_INSTRUCAO}}</div>
         </div>
 
-        <div ng-include src="'views/timeline.html'"></div>
+        <div ng-include src="'views/base/timeline.html'"></div>
 
     </div>
-    <a href="index.html">&laquo; Voltar</a>
+    <a href="#/politicos">&laquo; Voltar</a>
 </section>
