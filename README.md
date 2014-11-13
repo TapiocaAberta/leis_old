@@ -4,6 +4,19 @@ Projeto de visualização dos projetos de lei.
 
 O sistema visa fazer uma interação maior entre a população e a câmara municipal de São José dos Campos, de forma com que todos os projetos de lei sejam agregados e visualizados de maneira simples e objetiva, incentivando os cidadãos a serem mais participativos na atividade política da cidade.
 
+# Como executar
+
+O projeto trata-se apenas do Front-End por enquanto, logo, para executar basta ter o python instalado na sua máquina e executar:
+
+No python 2.x:
+
+	python -m SimpleHTTPServer
+
+No python 3.x:
+	
+	python -m http.server
+
+basta acessar [http://localhost:8000](http://localhost:8000)
 
 # Editando os dados.
 
@@ -33,7 +46,6 @@ O processo de extração da informação foi automatizado, e o dado de origem n�
 	"Dra. Angela"
 	
 O desafio é identificar todas essas variações e aplicar as mudanças na fonte dos dados.
-
 
 
 # Fonte dos dados
