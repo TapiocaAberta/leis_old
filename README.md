@@ -1,5 +1,8 @@
 # Leis SJC
 
+@deprecated Moved to [transparenciasjc/leis](https://github.com/transparenciasjc/leis)
+![@deprecated](https://octodex.github.com/images/mummytocat.gif)
+
 Projeto de visualização dos projetos de lei.
 
 O sistema visa fazer uma interação maior entre a população e a câmara municipal de São José dos Campos, de forma com que todos os projetos de lei sejam agregados e visualizados de maneira simples e objetiva, incentivando os cidadãos a serem mais participativos na atividade política da cidade.
